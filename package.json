@@ -11,14 +11,15 @@
     "react-scripts": "3.2.0",
     "string": "^3.3.3",
     "topojson": "^3.0.2",
-    "homepage": "https://ryan-blake.github.io/reactd3"
+    "homepage": "http://ryan-blake.github.io/reactd3"
   },
   "scripts": {
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "deploy": "npm run build && gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
